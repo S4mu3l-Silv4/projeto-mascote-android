@@ -221,6 +221,14 @@ footer {
     transition: all 0.4s ease;
 }
 
+/* Versão mobile */
+@media (max-width: 768px) {
+    footer {
+        padding: 4px;
+        transition: all 0.4s ease;
+    }
+}
+
 footer p {
     color: var(--branco);
 }
@@ -236,12 +244,4 @@ footer a:hover {
     color: var(--verde-2);
     text-decoration: underline;
     transition: all 0.5s ease;
-}
-
-/* Versão mobile */
-@media (max-width: 768px) {
-    footer {
-        padding: 4px;
-        transition: all 0.4s ease;
-    }
 }
