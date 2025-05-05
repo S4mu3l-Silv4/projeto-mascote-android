@@ -45,6 +45,34 @@ header {
     background-image: linear-gradient(to bottom, var(--verde-3), var(--verde-1));
 }
 
+header nav {
+    background-color: var(--verde-6);
+    box-shadow: 0px 3px 6px 0px var(--preto);
+    padding: 12px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    transition: top 0.4s ease;
+    width: 100%;
+    z-index: 1;
+}
+
+header nav a {
+    color: var(--verde-1);
+    letter-spacing: 1px;
+    margin-right: 25px;
+    text-decoration: none;
+    transition: all 0.6s ease;
+}
+
+header nav a:hover {
+    border-radius: 10px;
+    color: var(--verde-2);
+    transition: all 0.6s ease;
+}
+
 header ul {
     display: flex;
 }
@@ -68,29 +96,6 @@ header h2 {
     margin-right: 10px;
     padding-bottom: 20px;
     text-align: center;
-}
-
-header nav {
-    background-color: var(--verde-6);
-    box-shadow: 0px 3px 3px 0px var(--preto);
-    padding: 15px;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
-
-header nav a {
-    color: var(--verde-1);
-    letter-spacing: 1px;
-    margin-right: 25px;
-    text-decoration: none;
-    transition: all 0.6s ease;
-}
-
-header nav a:hover {
-    border-radius: 10px;
-    color: var(--verde-2);
-    transition: all 0.6s ease;
 }
 
 main {
