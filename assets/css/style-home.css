@@ -49,6 +49,8 @@ header nav {
     background-color: var(--verde-6);
     box-shadow: 0px 3px 6px 0px var(--preto);
     padding: 12px;
+    padding-bottom: 7px;
+    padding-left: 0px;
 }
 
 .navbar {
@@ -69,7 +71,7 @@ header nav a {
 
 header nav a:hover {
     border-radius: 10px;
-    color: var(--verde-2);
+    color: var(--verde-3);
     transition: 0.6s ease;
 }
 
@@ -77,8 +79,14 @@ header ul {
     display: flex;
 }
 
+.mascote-android {
+    height: 25px;
+    transform: rotate(90deg);
+}
+
 header li {
     list-style: none;
+    margin-left: 20px;
 }
 
 header h1 {
