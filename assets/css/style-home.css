@@ -53,7 +53,7 @@ header nav {
     padding-left: 0px;
 }
 
-.navbar {
+.nav-bar {
     position: fixed;
     top: 0;
     transition: top 0.4s ease;
