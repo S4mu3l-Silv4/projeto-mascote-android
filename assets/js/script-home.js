@@ -7,7 +7,7 @@
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop
 
         if (scrollTop > ultimoScrollTop) {
-            navBar.style.top = "-40px"
+            navBar.style.top = "-36px"
         } else {
             navBar.style.top = "0"
         }
