@@ -53,12 +53,11 @@
         padding-left: 0px;
     }
 
-    .nav-bar {
-        position: fixed;
-        top: 0;
-        transition: top 0.4s ease;
-        width: 100%;
-        z-index: 1000;
+/* Versão mobile */
+    @media (max-width: 768px) {
+        header nav {
+            padding: 0px;
+        }
     }
 
     header nav a {
@@ -75,6 +74,95 @@
         transition: 0.6s ease;
     }
 
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        transition: top 0.4s ease;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .menu-mobile {
+        cursor: pointer;
+        display: none;
+    }
+
+    .menu-mobile div {
+        transition: 0.4s ease;
+    }
+
+/* Versão mobile */
+    @media (max-width: 768px) {
+        .menu-mobile {
+            cursor: pointer;
+            display: block;
+            left: 75vw;
+            position: relative;
+        }
+
+        .menu-mobile div {
+            background: var(--branco);
+            height: 2px;
+            margin: 8px;
+            transition: 0.4s ease;
+            width: 32px;
+        }
+
+        .menu-mobile div:hover {
+            transition: 0.4s ease;
+        }
+
+        .lista-nav {
+            align-items: center;
+            background: var(--verde-6);
+            border-radius: 0px 0px 0px 50px;
+            box-shadow: 0px 3px 6px 0px var(--preto);
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            height: 70vh;
+            margin-top: 1px;
+            padding-bottom: 15px;
+            position: absolute;
+            right: 0;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            width: 33vw;
+        }
+
+        .lista-nav li {
+            opacity: 0;
+        }
+
+        .lista-nav.ativa {
+            transform: translateX(0);
+        }
+
+        @keyframes linkNavOpaco {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .menu-mobile.ativa .linha-1 {
+            transform: rotate(-40deg) translate(-8px, 8px);
+        }
+
+        .menu-mobile.ativa .linha-2 {
+            opacity: 0;
+        }
+
+        .menu-mobile.ativa .linha-3 {
+            transform: rotate(40deg) translate(-5px, -7px);
+        }
+    }
+
     header ul {
         display: flex;
     }
@@ -82,6 +170,13 @@
     .mascote-android {
         height: 25px;
         transform: rotate(90deg);
+    }
+
+/* Versão mobile */
+    @media (max-width: 768px) {
+        .mascote-android {
+            transform: rotate(180deg);
+        }
     }
 
     header li {
