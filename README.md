@@ -1,4 +1,4 @@
-# Projeto portifólio pessoal:
+# Projeto mascote Android:
 
   Este site foi criado por https://github.com/S4mu3l-Silv4 como um projeto pessoal, objetivando praticar e demonstrar as minhas habilidades em programação front-end.
   <br>
