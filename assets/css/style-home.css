@@ -207,6 +207,7 @@
         box-shadow: 0px 0px 10px var(--preto);
         margin: auto;
         margin-bottom: 30px;
+        margin-top: 60px;
         max-width: 1000px;
         min-width: 300px;
         padding: 20px;
@@ -303,6 +304,10 @@
         border-radius: 10px;
         box-shadow: 3px 3px 8px var(--preto);
         padding: 10px;
+    }
+
+    #curiosidades {
+        margin-top: 130px;
     }
 
     aside > h3 {
