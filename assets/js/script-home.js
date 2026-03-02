@@ -15,24 +15,6 @@
         ultimoScrollTop = scrollTop <= 0 ? 0 : scrollTop
     })
 
-// Associação entre links da nav bar e seções:
-
-    const linksNavBar = document.querySelectorAll('a.link')
-    linksNavBar.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault()
-            const alvo = document.querySelector(this.getAttribute('href'))
-            if (alvo) {
-                const alturaHeader = document.querySelector('.nav-bar').offsetHeight;
-                const posicaoAlvo = alvo.offsetTop - alturaHeader - 50
-                window.scrollTo({
-                    top: posicaoAlvo,
-                    behavior: 'smooth'
-                })
-            }
-        })
-    })
-
 // Nav bar hambúrguer em telas mobile:
 
     class navBarMobile {
@@ -78,3 +60,21 @@
         ".lista-nav li",
     )
     navBarMobileFalsa.inicializar()
+
+// Associação entre links da nav bar e seções:
+
+    const linksNavBar = document.querySelectorAll('a.link')
+    linksNavBar.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault()
+            const alvo = document.querySelector(this.getAttribute('href'))
+            if (alvo) {
+                const alturaHeader = document.querySelector('.nav-bar').offsetHeight;
+                const posicaoAlvo = alvo.offsetTop - alturaHeader - 50
+                window.scrollTo({
+                    top: posicaoAlvo,
+                    behavior: 'smooth'
+                })
+            }
+        })
+    })
