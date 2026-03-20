@@ -78,3 +78,21 @@
             }
         })
     })
+
+// Animação de aparição do conteúdo:
+
+  const elementos = document.querySelectorAll(".revelar")
+
+  const obervador1 = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add("mostrar")
+        }
+    })
+  },{
+      threshold:0.2
+  })
+
+  elementos.forEach(el=>{
+    obervador1.observe(el)
+  })
