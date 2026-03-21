@@ -336,38 +336,3 @@
         list-style-position: inside;
         list-style-type: '\2714\00A0\00A0';
     }
-
-    footer {
-        background-color: var(--verde-6);
-        color: var(--branco);
-        font-size: 0.8em;
-        letter-spacing: 1px;
-        padding: 7px;
-        text-align: center;
-        transition: 0.4s ease;
-    }
-
-    /* Versão mobile */
-    @media (max-width: 768px) {
-        footer {
-            padding: 4px;
-            transition: 0.4s ease;
-        }
-    }
-
-    footer p {
-        color: var(--branco);
-    }
-
-    footer a {
-        color: var(--branco);
-        text-decoration: none;
-        font-weight: bolder;
-        transition: 0.5s ease;
-    }
-
-    footer a:hover {
-        color: var(--verde-2);
-        text-decoration: underline;
-        transition: 0.5s ease;
-    }
