@@ -91,7 +91,6 @@
         transition: 0.4s ease;
     }
 
-/* Versão mobile */
     @media (max-width: 768px) {
         .menu-mobile {
             cursor: pointer;
@@ -163,6 +162,7 @@
         }
     }
 
+/* Versão desktop */
     header ul {
         display: flex;
     }
@@ -181,6 +181,7 @@
         }
     }
 
+/* Versão desktop */
     header li {
         list-style: none;
         margin-left: 20px;
