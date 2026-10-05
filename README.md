@@ -1,6 +1,6 @@
 # Projeto mascote Android:
 
-  Este projeto foi desenvolvido como um aprimoramento pessoal, objetivando praticar e demonstrar as minhas habilidades em front-end.
+  Este projeto foi desenvolvido como um aprimoramento pessoal, objetivando praticar e demonstrar as minhas habilidades na área Front-End.
   <br>
   <br>
 ## Site no ar:
